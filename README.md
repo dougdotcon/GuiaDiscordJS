@@ -1,219 +1,123 @@
----
-description: 'O guia não oficial para iniciantes em Discord.js, escrito por idiotas para iniciantes.'
----
-
-# 🎉 Bem-vindo ao Guia Discord.js Bot
+# 🎉 Welcome to the DiscordJS Beginner Guide
 
 <div align="center">
 
-### 📚 O guia completo para criar bots incríveis no Discord usando Discord.js v13+
+### 📚 The Complete Guide to Creating Amazing Discord Bots using Discord.js v13+
 
-[![Status da Tradução](https://img.shields.io/badge/Tradução-PT--BR-success)](checklist.md)
+[![Translation Status](https://img.shields.io/badge/Translation-PT--BR-success)](checklist.md)
 [![Discord.js](https://img.shields.io/badge/Discord.js-v13-blue)](https://discord.js.org)
-[![Licença](https://img.shields.io/badge/Licença-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 </div>
 
 ---
 
-## 📖 O que é este projeto?
+## 📖 What is this project?
 
-Este é um **guia completo e traduzido para Português Brasileiro** que ensina como criar bots para Discord usando a biblioteca Discord.js. Diferente da documentação oficial que pode ser intimidadora para iniciantes, este guia oferece explicações passo a passo com exemplos práticos e código funcional.
+This is a **comprehensive guide translated into Brazilian Portuguese** that teaches how to create Discord bots using the Discord.js library. Unlike the official documentation which can be intimidating for beginners, this guide offers step-by-step explanations with practical examples and functional code.
 
-### Para que serve?
+### What is it for?
 
-Este guia foi criado para **simplificar o aprendizado** de desenvolvimento de bots Discord. Ele foi escrito por desenvolvedores experientes que entenderam a dificuldade de começar na biblioteca Discord.js e criaram este recurso para ajudar iniciantes a:
+This guide was created to **simplify the learning process** of Discord bot development. It was written by experienced developers who understood the difficulty of starting with the Discord.js library and created this resource to help beginners:
 
-- ✨ **Aprender** os conceitos fundamentais do Discord.js
-- 🚀 **Criar** seu primeiro bot funcional
-- 🎯 **Implementar** funcionalidades avançadas como sistemas de pontos, starboards, logs, etc.
-- 🛠️ **Desenvolver** habilidades de programação JavaScript/Node.js na prática
-- 📚 **Entender** a estrutura e funcionamento da API do Discord
+- ✨ **Learn** the fundamental concepts of Discord.js
+- 🚀 **Create** their first functional bot
+- 🎯 **Implement** advanced features like point systems, starboards, logs, etc.
+- 🛠️ **Develop** JavaScript/Node.js programming skills in practice
+- 📚 **Understand** the structure and functioning of the Discord API
 
-### O que você pode fazer com este guia?
+### What can you do with this guide?
 
-Ao seguir este guia, você será capaz de criar bots Discord com as seguintes funcionalidades:
+By following this guide, you will be able to create Discord bots with the following features:
 
-**🔧 Funcionalidades Básicas:**
-- Criar comandos customizados com prefixos
-- Gerenciar mensagens e canais
-- Detectar eventos do servidor (entrada de membros, mensagens deletadas, etc.)
-- Usar emojis personalizados e do Discord
-- Criar embeds ricos e visualmente atraentes
+**🔧 Basic Features:**
+- Create custom commands with prefixes
+- Manage messages and channels
+- Detect server events (member joins, deleted messages, etc.)
+- Use custom and Discord emojis
+- Create rich, visually appealing embeds
 
-**⚙️ Funcionalidades Intermediárias:**
-- Sistema de pontos e níveis com banco de dados SQLite
-- Sistema de starboard (mensagens destacadas)
-- Rastreamento de convites (ver quem convidou quem)
-- Logs de auditoria e moderação
-- Comandos com cooldown e proteção de acesso
-- Manipulador de comandos modular e organizado
+**⚙️ Intermediate Features:**
+- Point and leveling system with SQLite database
+- Starboard system (highlighted messages)
+- Invite tracking (see who invited who)
+- Audit logs and moderation
+- Commands with cooldown and access protection
+- Modular and organized command handler
 
-**🚀 Funcionalidades Avançadas:**
-- Webhooks para notificações e integrações
-- Sharding para bots grandes (milhares de servidores)
-- Gerenciamento completo de cargos e permissões
-- Comando eval para desenvolvedores
-- Integração com APIs externas (Cleverbot, etc.)
-- Configuração por servidor
+**🚀 Advanced Features:**
+- Webhooks for notifications and integrations
+- Sharding for large bots (thousands of servers)
+- Complete role and permission management
+- Developer eval command
+- Integration with external APIs (Cleverbot, etc.)
+- Per-server configuration
 
-**🛠️ Ferramentas de Desenvolvimento:**
-- Uso de Git e GitHub para controle de versão
-- Variáveis de ambiente para segurança
-- Async/await para programação assíncrona
-- Editor adequado para produtividade
-- Deploy em serviços de hospedagem
-
----
-
-## 🎯 Para quem é este guia?
-
-Este guia é perfeito para:
-
-- 👨‍💻 **Iniciantes** em programação que querem aprender JavaScript de forma prática
-- 🤖 **Desenvolvedores** que querem criar bots para seus servidores Discord
-- 📝 **Estudantes** aprendendo desenvolvimento web e Node.js
-- 🔧 **Autodidatas** que preferem aprender através de exemplos práticos
-- 🇧🇷 **Comunidade brasileira** que prefere conteúdo em português
-
-**Requisitos:** Conhecimento básico de JavaScript é recomendado (variáveis, funções, objetos). Se você não conhece JavaScript, recomendamos estudar os fundamentos primeiro.
+**🛠️ Development Tools:**
+- Use of Git and GitHub for version control
+- Environment variables for security
+- Async/await for asynchronous programming
+- Suitable editor for productivity
+- Deployment on hosting services
 
 ---
 
-## 🚀 Começando
+## 🎯 Who is this guide for?
 
-Novo no Discord.js? Recomendamos começar pela seção [Começando](comecando/README.md) onde você encontrará:
+This guide is perfect for:
 
-- ✅ Instalação do Node.js e configuração do ambiente
-- ✅ Criação do bot no Discord Developer Portal
-- ✅ Configuração do primeiro bot funcional
-- ✅ Guias rápidos (TL;DR) e versões detalhadas
-- ✅ Entendimento dos conceitos básicos
+- 👨‍💻 **Beginners** in programming who want to learn JavaScript in a practical way
+- 🤖 **Developers** who want to create bots for their Discord servers
+- 📝 **Students** learning web development
 
 ---
 
-## 📚 Índice de Conteúdo
+## 🚀 Getting Started
 
-### 🎯 Fundamentos
+To get started, ensure you have [Node.js](https://nodejs.org/) installed (version 16.9.0 or higher is recommended for Discord.js v13). Then, clone the repository and install the dependencies:
 
-**[Primeiro Bot](primeiro-bot/README.md)**  
-Crie seu primeiro bot funcional com comandos personalizados e configuração completa.
+bash
+git clone https://github.com/yourusername/DiscordJSBeginnerGuide.git
+cd DiscordJSBeginnerGuide
+npm install
 
-**[Eventos e Manipuladores](entendendo/eventos-e-manipuladores.md)**  
-Entenda como o Discord.js funciona com eventos assíncronos e manipulação de ações.
 
-**[Coleções](entendendo/colecoes.md)**  
-Aprenda a trabalhar com dados da API do Discord de forma eficiente.
-
-### 💻 Guias de Programação
-
-**[Sistema de Pontos](guias-de-programacao/sistema-pontos-sqlite.md)**  
-Implemente um sistema completo de XP/Níveis com banco de dados SQLite.
-
-**[Starboard](guias-de-programacao/criando-starboard.md)**  
-Crie um sistema de favoritos onde mensagens são destacadas automaticamente.
-
-**[Rastreamento de Convites](guias-de-programacao/rastreando-convites.md)**  
-Monitore qual membro convidou cada pessoa que entra no servidor.
-
-**[Logs de Auditoria](guias-de-programacao/usando-logs-auditoria.md)**  
-Identifique quem executou ações de moderação no servidor.
-
-**[Emojis](guias-de-programacao/usando-emojis.md)**  
-Use emojis personalizados e Unicode em seus comandos e mensagens.
-
-### 🌐 Funcionalidades Avançadas
-
-**[Webhooks](webhooks-discord/README.md)**  
-Configure notificações e integrações com serviços externos.
-
-**[Sharding](entendendo/sharding.md)**  
-Escale seu bot para suportar milhares de servidores.
-
-**[Permissões](entendendo/cargos.md)**  
-Gerencie cargos e permissões de forma programática.
-
-### 📝 Exemplos Práticos
-
-**[Comando Eval](exemplos/criando-comando-eval.md)**  
-Implemente um console de desenvolvedor para testar código.
-
-**[Exemplos Diversos](exemplos/exemplos-diversos.md)**  
-Cooldowns, purga de mensagens, detectores de palavrões, etc.
-
-### 🛠️ Ferramentas e Configuração
-
-**[Variáveis de Ambiente](outros-guias/variaveis-ambiente.md)**  
-Proteja tokens e configurações sensíveis com arquivos .env.
-
-**[Git e GitHub](outros-guias/usando-git.md)**  
-Use controle de versão para gerenciar seu código.
-
-**[Editor Adequado](outros-guias/instalando-editor-adequado.md)**  
-Configure seu ambiente de desenvolvimento para máxima produtividade.
-
-**[Async/Await](outros-guias/async-await.md)**  
-Domine programação assíncrona moderna em JavaScript.
+Follow the chapters in the `docs` folder or check the `examples` directory for code snippets.
 
 ---
 
-## 🆘 Obtenha Suporte
+## 📂 Repository Structure
 
-### Discord Servers
 
-<div align="center">
+DiscordJSBeginnerGuide/
+├── 📂 examples/          # Functional code examples
+├── 📂 docs/              # Detailed documentation and tutorials
+├── 📂 src/               # Source code for the bot
+├── .env.example         # Example environment variables
+├── package.json         # Project dependencies
+└── README.md            # You are here
 
-👥 **[Servidor An Idiot's Guide](https://discord.gg/bRCvFy9)**  
-Dúvidas sobre este guia? Entre no nosso servidor!
-
-🤖 **[Servidor Oficial Discord.js](https://discord.gg/djs)**  
-Suporte oficial da biblioteca Discord.js
-
-</div>
-
-### Outros Recursos
-
-- 📖 [Documentação Oficial do Discord.js](https://discord.js.org)
-- 💡 [FAQ - Perguntas Frequentes](perguntas-frequentes.md)
-- ⚠️ [Erros Comuns e Soluções](erros-comuns.md)
 
 ---
 
-## 📊 Status da Tradução
+## 🤝 Contributing
 
-Este guia foi **completamente traduzido** para **Português Brasileiro (PT-BR)**. 
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-✅ **39 arquivos traduzidos**  
-📈 **100% completo**  
-🎯 **Nomes de pastas e arquivos traduzidos**  
-🔗 **Todos os links internos atualizados**
-
-Verifique o [Checklist de Tradução](checklist.md) para ver o progresso detalhado.
-
----
-
-## 🌟 Contribuindo
-
-Contribuições são bem-vindas! Este guia é mantido pela comunidade e novos colaboradores são sempre apreciados. Se você encontrar erros, tiver sugestões ou quiser melhorar algo, sinta-se à vontade para contribuir.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## 🙏 Agradecimentos
+## 📜 License
 
-Agradecemos a todos os colaboradores que tornaram este guia possível e continuam ajudando a mantê-lo atualizado e acessível. Mantenedores originais: York#0001 e Discordaholic#0001 ("Evie.Codes").
-
----
-
-## 📄 Licença
-
-Este guia é distribuído sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-<div align="center">
+## 📧 Contact
 
-**Feito com ❤️ pela comunidade Discord.js**
-
-[Iniciar Tutorial](comecando/README.md) • [Ver FAQ](perguntas-frequentes.md) • [Erros Comuns](erros-comuns.md)
-
-</div>
+Project Link: [https://github.com/yourusername/DiscordJSBeginnerGuide](https://github.com/yourusername/DiscordJSBeginnerGuide)
